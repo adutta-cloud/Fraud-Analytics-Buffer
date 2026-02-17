@@ -1,7 +1,7 @@
-package com.griddynamics.anusruta.api.rest;
+package com.visa.validator.api.rest;
 
-import com.griddynamics.anusruta.core.model.Transaction;
-import com.griddynamics.anusruta.core.port.in.TransactionValidatorPort;
+import com.visa.validator.core.model.Transaction;
+import com.visa.validator.core.port.in.TransactionValidatorPort;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 

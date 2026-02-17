@@ -1,4 +1,12 @@
 <configuration>
+  <!-- Human-readable console output for development -->
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) %cyan([%thread]) %yellow(%logger{36}) - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- JSON format for production (keep for reference) -->
   <appender name="JSON_STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <encoder class="net.logstash.logback.encoder.LogstashEncoder">
     </encoder>
@@ -10,6 +18,7 @@
   </appender>
 
   <root level="INFO">
-    <appender-ref ref="ASYNC" />
+    <!-- Use CONSOLE for readable logs, ASYNC for JSON -->
+    <appender-ref ref="CONSOLE" />
   </root>
 </configuration>

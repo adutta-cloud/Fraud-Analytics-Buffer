@@ -1,4 +1,4 @@
-package com.griddynamics.anusruta.core.model;
+package com.visa.validator.core.model;
 
 import java.time.LocalDateTime;
 import java.util.Currency;

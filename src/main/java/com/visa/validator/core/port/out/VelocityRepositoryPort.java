@@ -1,4 +1,4 @@
-package com.griddynamics.anusruta.core.port.out;
+package com.visa.validator.core.port.out;
 
 import java.util.UUID;
 
